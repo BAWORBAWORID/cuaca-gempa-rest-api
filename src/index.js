@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     Creator: 'BAWOR BAWOR ID',
     source: 'https://github.com/renomureza/cuaca-gempa-rest-api',
     endpoint: {
-      quake: `${BASE_URL}/info_gempa`,
+      info_gempa: `${BASE_URL}/info_gempa`,
       weather: {
         province: {
           example: `${BASE_URL}/weather/jawa-barat`,
