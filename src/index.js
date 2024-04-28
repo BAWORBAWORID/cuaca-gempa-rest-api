@@ -16,14 +16,14 @@ app.use((req, res, next) => {
 });
 
 app.use('/weather', weatherRoute);
-app.use('/quake', quakeRoute);
+app.use('/info_gempa', quakeRoute);
 
 app.get('/', (req, res) => {
   return res.status(200).send({
-    maintainer: 'Renova Muhamad Reza',
+    Creator: 'BAWOR BAWOR ID',
     source: 'https://github.com/renomureza/cuaca-gempa-rest-api',
     endpoint: {
-      quake: `${BASE_URL}/quake`,
+      quake: `${BASE_URL}/info_gempa`,
       weather: {
         province: {
           example: `${BASE_URL}/weather/jawa-barat`,
